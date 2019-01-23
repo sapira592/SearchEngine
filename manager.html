@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+
+	<script src="javaScript/managerController.js"></script>
+
+
+</head>
+<body>	
+	<div id="wrapper">
+
+		<nav id="managment">
+			<div id="managerHeader">
+				Search Engine - Management
+			</div>
+			
+			
+			<div id="back">	
+				<a href="index.html">Back to Engine</a>
+			</div>
+		</nav>
+
+
+		<main>
+
+		<section id="uploadBox">
+
+			    <form id="uploadFiles" method="post" enctype="multipart/form-data">
+				  Select Documents for Upload:
+				  <input type="file" name="uploadFiles[]" id="files" multiple> 
+				  <input type="submit" class="btn btn-info" value="Upload">
+				</form>
+
+				<div id="loaderBox"></div>
+
+		</section>
+
+		<section id="deleteScope">
+			<div id="deleteBox">
+				
+			<form method="post"  id="hideDoc" class="form-group">
+			    <input type="text" class="form-control" id="hideDocLable" name="name" placeholder="Enter doc name">
+			 	<button type="submit" class="btn btn-info">Hide</button>
+			 </form>
+
+			<form method="post"  id="reshowDoc" class="form-group">
+			    <input type="text" class="form-control" id="reshowDocLable" name="name" placeholder="Enter doc name">
+			 	<button type="submit" class="btn btn-info">Reshow</button>
+			 </form>
+
+			</div>
+		</section>
+
+		</main>
+	
+		
+	</div>
+
+	
+</body>
+</html>
+
+
+
+<!-- 
+<button type="button" class="btn btn-info">Show all stored files</button> -->

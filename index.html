@@ -1,0 +1,78 @@
+	<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+
+	<script src="javaScript/indexController.js"></script>
+
+
+</head>
+<body id="indexBody">	
+	<div id="wrapper">
+
+
+		<nav>
+			<div id="help"><!-- Popover is a HTML5 data attribute that automatically hooks up the element to the type of widget it is -->
+				<a href="#" data-toggle="popover" title="Help" data-content="You can write a 1 to 3 levels of query's barckets.              
+																			The available operators between each term are: and/AND,
+																			or/OR, and not/AND NOT. (Not case sensitive). The 
+																			operator AND NOT must be at the end of a query, e.g:
+																			   __ANT NOT__, (_ or _) AND NOT. "> Help </a>
+			</div>
+			
+			
+			<div id="managerEnter">	
+				<a id="manage" href="#" data-toggle="modal" data-target="#login-modal"> Manager </a>
+				<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		    	  <div class="modal-dialog">
+						<div class="loginmodal-container">
+							<h3>Manager Login</h3><br>
+						  <form method="post" id="loginForm">
+							<input type="text" id="user" name="user" placeholder="Username">
+							<input type="password" id="pass" name="pass" placeholder="Password">
+							<input type="submit" name="login" class="btn btn-info" value="Login">
+						  </form>
+							
+						</div>
+					</div>
+				  </div>
+			</div>
+		</nav>
+
+
+		<header>
+			Search Engine
+		</header>
+
+
+		<main>
+
+		<section id="search">
+			 <form method="post"  id="searchForm" class="form-group">
+			    <input type="text" class="form-control" id="searchLable" name="query" placeholder="Enter Expression">
+			 	<button type="submit" class="btn btn-info">Search</button>
+			 </form>
+		</section>
+
+		<section id="resultsBox">
+
+		</section>
+
+		</main>
+	
+		
+	</div>
+
+	
+</body>
+</html>
